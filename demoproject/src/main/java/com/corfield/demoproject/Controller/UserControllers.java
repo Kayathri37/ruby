@@ -20,7 +20,7 @@ public class UserControllers {
     @PostMapping("/signin")
     public ResponseEntity<ResponseDto> createUser(@RequestBody UserServiceReqDto reqDto) {
         ResponseDto response = userService.createUser(reqDto);
-        return ResponseEntity.ok(response); // Return the ResponseDto wrapped in ResponseEntity
+        return ResponseEntity.ok(response);// Return the ResponseDto wrapped in ResponseEntity
     }
 
     // Endpoint to get all users
